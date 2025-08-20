@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Connections to Us - A Biblical Perspective</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .author {
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #34495e;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://placehold.co/1200x600/4a90e2/ffffff?text=Technology+%26+Faith') center/cover;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Main Content */
+        .main-content {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            color: #495057;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Arguments Grid */
+        .arguments {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+
+        .argument-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #3498db;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .argument-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .argument-card h3 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .argument-card .icon {
+            color: #3498db;
+            font-size: 1.3rem;
+        }
+
+        .argument-card p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        .scripture {
+            background: linear-gradient(135deg, #e8f4fd, #c3e8ff);
+            padding: 1rem;
+            border-radius: 8px;
+            font-style: italic;
+            color: #2980b9;
+            border-left: 3px solid #3498db;
+            margin: 1rem 0;
+        }
+
+        /* Affirmation Section */
+        .affirmation {
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .affirmation h2 {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .affirmation-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Conclusion */
+        .conclusion {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .conclusion h2 {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .conclusion-content {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .final-quote {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            .arguments {
+                grid-template-columns: 1fr;
+            }
+            
+            .argument-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>AI Connections to Us</h1>
+            <p class="subtitle">A Biblical Perspective on Technology and Faith</p>
+            <p class="author">By Sal Beas | August 18, 2025</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Beyond the Algorithm</h2>
+            <p>Exploring the intersection of artificial intelligence and divine wisdom, where technology meets eternal truth and human purpose finds its true foundation.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Introduction -->
+            <section class="intro">
+                <p>While modern discussions of AI offer intellectually rich and even poetic insights, they often represent a worldview that excludes the Creator. This analysis examines how a God-centered perspective better accounts for life, intelligence, and our future than technological optimism alone.</p>
+            </section>
+
+            <!-- Core Arguments -->
+            <section class="arguments">
+                <!-- Argument 1: Life as Computation -->
+                <div class="argument-card">
+                    <h3><i class="fas fa-dna icon"></i>Life Beyond Computation</h3>
+                    <p>The idea that "life is computation" seeks to explain origins without a Designer. While cells may function like programs and DNA like instruction tapes, this metaphor presupposes information, encoding, and purpose—features that point to mind, not chance.</p>
+                    <div class="scripture">
+                        "With you is the source of life" (Psalm 36:9)<br>
+                        "In the beginning God created the heavens and the earth" (Genesis 1:1)
+                    </div>
+                    <p>Computation explains how patterns propagate, but never answers why information exists or who endowed it with meaning.</p>
+                </div>
+
+                <!-- Argument 2: Intelligence and Wisdom -->
+                <div class="argument-card">
+                    <h3><i class="fas fa-brain icon"></i>Beyond Prediction</h3>
+                    <p>While brains may function as "autocomplete" machines in perception and language, accurate prediction is not the same as wisdom or moral discernment. Humans are more than forecasters—we are moral agents made in God's image.</p>
+                    <div class="scripture">
+                        "The fear of Jehovah is the beginning of wisdom" (Proverbs 9:10)<br>
+                        Made "in God's image" (Genesis 1:26, 27)
+                    </div>
+                    <p>Algorithms can rank likely outcomes; they cannot confer worth, heal conscience, or define righteous conduct.</p>
+                </div>
+
+                <!-- Argument 3: Cooperation and Order -->
+                <div class="argument-card">
+                    <h3><i class="fas fa-hands-helping icon"></i>The Source of Order</h3>
+                    <p>Cooperation—cells teaming up, societies scaling—does multiply human strength. But cooperation describes a mechanism, not an origin. It doesn't explain why there are stable rules or a world intelligible enough to support teamwork.</p>
+                    <div class="scripture">
+                        "Two are better than one" (Ecclesiastes 4:9-12)<br>
+                        "The heavens declare the glory of God" (Psalm 19:1)
+                    </div>
+                    <p>Complexity may increase, but meaning comes from relationship with the Life-Giver.</p>
+                </div>
+
+                <!-- Argument 4: Future Direction -->
+                <div class="argument-card">
+                    <h3><i class="fas fa-compass icon"></i>True Hope</h3>
+                    <p>While some envision humans plus AI as the next evolutionary phase, Scripture describes a different arc—one leading to God's Kingdom, which will bring permanent peace and justice.</p>
+                    <div class="scripture">
+                        "Last days" marked by global distress (Matthew 24:3-14)<br>
+                        God's Kingdom bringing peace (Daniel 2:44; Revelation 21:3-5)
+                    </div>
+                    <p>Technology can be useful, but it is not our savior. Hope lies not in smarter systems but in righteous rulership.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Affirmation Section -->
+    <section class="affirmation">
+        <div class="container">
+            <h2>What We Can Affirm</h2>
+            <div class="affirmation-content">
+                <p>Curiosity about the world reflects the rationality Jehovah gave us. The observation that cooperation unlocks capability aligns with Scripture's wisdom about community. Even the prediction metaphor reminds us to think ahead and act responsibly.</p>
+                <p>But these insights belong under a higher principle: <strong>"Make sure of the more important things"</strong> (Philippians 1:10). Tools, including AI, serve best when they are servants, not masters, in a life oriented to God.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="conclusion">
+        <div class="container">
+            <h2>A Compass for Purpose</h2>
+            <div class="conclusion-content">
+                <p>Discussions like these create opportunities for respectful conversations about origins, meaning, and destiny. Christians can "make a defense" with gentleness and deep conviction, acknowledging the limits of unaided human reasoning while pointing to a hope technology cannot replicate.</p>
+                
+                <div class="final-quote">
+                    "The TED Talk is a sophisticated map of mechanisms. The Bible is a trustworthy compass for purpose. One describes patterns of growth; the other reveals the Source of life and the destination."
+                </div>
+                
+                <p>In that light, we look forward to a restored earth filled "with the knowledge of Jehovah" (Isaiah 11:9)—a hope that transcends any technological advancement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sal Beas. A reflection on faith, technology, and eternal truth.</p>
+        </div>
+    </footer>
+</body>
+</html>
